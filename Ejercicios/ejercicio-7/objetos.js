@@ -14,6 +14,7 @@ let lista = {...datosPersonales}
 console.log(lista);
 
 const amigos = [
+  {...datosPersonales},
   {nombres: "Blanca del Rosarios",
   apellidos: "Maas Guevara",
   edad: 29,
@@ -27,6 +28,6 @@ const amigos = [
 ]
 console.log(amigos);
 
-amigos.sort((a, b) => a.edad - b.edad)
+let listaOrdenada = amigos.sort((a, b) => a.edad - b.edad)
 
-console.log(amigos)
+console.log(listaOrdenada)
